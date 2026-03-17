@@ -396,43 +396,43 @@ export default function CVContent() {
             </p>
           </div>
 
-          <div className="mt-6 sm:mt-0 flex flex-col space-y-2 text-gray-400 text-sm xl:text-right w-full sm:w-80 shrink-0 z-0 text-right">
-            <div className="flex items-start sm:items-center sm:justify-end gap-2 text-gray-300">
-              <span className="hidden sm:inline text-gray-500 font-mono text-xs pt-0.5 sm:pt-0">Email</span>
+          <div className="mt-6 sm:mt-0 flex flex-col space-y-2 text-gray-400 text-sm w-full sm:w-[320px] shrink-0 z-0">
+            <div className="flex items-start justify-end gap-3 text-gray-300 w-full">
+              <span className="hidden sm:inline text-gray-500 font-mono text-[11px] uppercase tracking-wider pt-0.5 shrink-0 w-[60px] text-right">Email</span>
               <EditableField
                 value={draftData.email}
                 onChange={(v) => setDraftData({ ...draftData, email: v })}
-                className="text-right hover:text-white transition"
-                wrapperClass="w-full sm:w-auto flex-1 sm:flex-none text-right"
+                className="text-right hover:text-white transition break-all inline-block max-w-full"
+                wrapperClass="w-full text-right"
                 isLink
               />
             </div>
-            <div className="flex items-start sm:items-center sm:justify-end gap-2 text-gray-300">
-              <span className="hidden sm:inline text-gray-500 font-mono text-xs pt-0.5 sm:pt-0">Phone</span>
+            <div className="flex items-start justify-end gap-3 text-gray-300 w-full">
+              <span className="hidden sm:inline text-gray-500 font-mono text-[11px] uppercase tracking-wider pt-0.5 shrink-0 w-[60px] text-right">Phone</span>
               <EditableField
                 value={draftData.phone}
                 onChange={(v) => setDraftData({ ...draftData, phone: v })}
-                className="text-right hover:text-white transition"
-                wrapperClass="w-full sm:w-auto flex-1 sm:flex-none text-right"
+                className="text-right hover:text-white transition break-words inline-block max-w-full"
+                wrapperClass="w-full text-right"
               />
             </div>
-            <div className="flex items-start sm:items-center sm:justify-end gap-2 text-blue-400/80 hover:text-blue-400 transition cursor-pointer">
-              <span className="hidden sm:inline text-blue-500/40 font-mono text-xs pt-0.5 sm:pt-0">GitHub</span>
+            <div className="flex items-start justify-end gap-3 text-blue-400/80 hover:text-blue-400 transition w-full">
+              <span className="hidden sm:inline text-blue-500/40 font-mono text-[11px] uppercase tracking-wider pt-0.5 shrink-0 w-[60px] text-right">GitHub</span>
               <EditableField
                 value={draftData.github}
                 onChange={(v) => setDraftData({ ...draftData, github: v })}
-                className="text-right"
-                wrapperClass="w-full sm:w-auto flex-1 sm:flex-none text-right"
+                className="text-right break-words inline-block max-w-full"
+                wrapperClass="w-full text-right"
                 isLink
               />
             </div>
-            <div className="flex items-start sm:items-center sm:justify-end gap-2 text-blue-400/80 hover:text-blue-400 transition cursor-pointer">
-              <span className="hidden sm:inline text-blue-500/40 font-mono text-xs pt-0.5 sm:pt-0">LinkedIn</span>
+            <div className="flex items-start justify-end gap-3 text-blue-400/80 hover:text-blue-400 transition w-full">
+              <span className="hidden sm:inline text-blue-500/40 font-mono text-[11px] uppercase tracking-wider pt-0.5 shrink-0 w-[60px] text-right">LinkedIn</span>
               <EditableField
                 value={draftData.linkedin}
                 onChange={(v) => setDraftData({ ...draftData, linkedin: v })}
-                className="text-right"
-                wrapperClass="w-full sm:w-auto flex-1 sm:flex-none text-right"
+                className="text-right break-words inline-block max-w-full"
+                wrapperClass="w-full text-right"
                 isLink
               />
             </div>
