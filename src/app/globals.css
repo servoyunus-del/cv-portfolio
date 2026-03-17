@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #f3f4f6;
+  --accent: #0070f3; /* Electric Blue */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.editable-field {
+  transition: all 0.2s;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  border-radius: 0.25rem;
+  border: 1px transparent dashed;
+}
+
+.editable-field:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.editing-active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
